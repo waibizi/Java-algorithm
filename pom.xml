@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.waibizi</groupId>
+    <artifactId>算法</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>146-LRU缓存机制</module>
+        <module>121-买卖股票的最佳时机</module>
+        <module>面试题63-股票的最大利润</module>
+        <module>面试题14-I-剪绳子</module>
+        <module>面试题18-删除链表的节点</module>
+        <module>面试题25-合并两个排序的链表</module>
+        <module>面试题32-I-从上到下打印二叉树</module>
+        <module>面试题32-III-从上到下打印二叉树 III</module>
+        <module>必修算法</module>
+        <module>必修算法/十大排序/选择排序</module>
+        <module>必修数据结构</module>
+        <module>必修数据结构/堆</module>
+        <module>必修数据结构/动态数组</module>
+        <module>必修数据结构/链表</module>
+        <module>面试题24-反转链表</module>
+        <module>面试题-06-从尾到头打印链表</module>
+        <module>141-环形链表</module>
+        <module>必修数据结构/栈</module>
+        <module>20-有效的括号</module>
+        <module>面试题03-数组中重复的数字</module>
+        <module>面试题09-用两个栈实现队列</module>
+        <module>面试题-31-栈的压入、弹出序列</module>
+        <module>必修数据结构/队列</module>
+        <module>必修数据结构/二叉搜索树</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
