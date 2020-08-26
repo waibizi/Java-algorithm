@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>LRU缓存</artifactId>
+    <artifactId>面试题-27-二叉树的镜像</artifactId>
 
 
 </project>

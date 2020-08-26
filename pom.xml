@@ -33,6 +33,8 @@
         <module>面试题-31-栈的压入、弹出序列</module>
         <module>必修数据结构/队列</module>
         <module>必修数据结构/二叉搜索树</module>
+        <module>面试题-55-I-二叉树的深度</module>
+        <module>面试题-27-二叉树的镜像</module>
     </modules>
 
     <build>
