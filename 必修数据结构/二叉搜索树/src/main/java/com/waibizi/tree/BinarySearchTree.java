@@ -173,10 +173,40 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         queue.offer(root);
         while (!queue.isEmpty()){
             Node<E> node = queue.poll();
-            operation.execute(node.element);
+            if (operation.execute(node.element)) return;
             if (node.left != null) queue.offer(node.left);
             if (node.right != null) queue.offer(node.right);
         }
+    }
+
+    /**
+     * 判断是不是完全二叉树，如果是返回true，如果不是返回false
+     */
+    public boolean isComplete() {
+        if (root != null) return false;
+        Queue<Node<E>> queue = new LinkedList<>();
+        queue.offer(root);
+        /* 剩下都是叶子的标志 */
+        boolean isLeaf = false;
+        while (!queue.isEmpty()){
+            Node<E> node = queue.poll();
+            /* 如果剩下的要求都是叶子，但是当前的节点并不是叶子节点，所以直接返回false就可以了 */
+            if (isLeaf && !node.isLeaf()){
+                return false;
+            }
+            if (node.left!=null)
+                queue.offer(node.left);
+            else if (node.right != null)
+                /* 能走到这一步，说明node.left == null 了，但是node.right != null ,已经说明不是完全二叉了 */
+                return false;
+            /* 这一步的判断跟上面的不一样，理清逻辑就好理解了 */
+            if (node.right != null)
+                queue.offer(node.right);
+            else
+                /* 如果node.left!=null但是node.right==null了，说明接下来都是叶子才符合完全二叉 */
+                isLeaf = true;
+        }
+        return true;
     }
 
     /**
@@ -188,7 +218,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
     }
 
     /**
-     * 根据元素的值，获取节点（因为二叉搜索树不能存在两个相同的节点）
+     * 根据元素的值，获取节点（因为二叉搜索树不能存在两个相同的节点）z
      * @param element
      * @return
      */

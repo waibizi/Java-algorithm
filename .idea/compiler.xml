@@ -10,6 +10,7 @@
         <module name="146-LRU缓存机制" />
         <module name="必修算法" />
         <module name="动态数组" />
+        <module name="5-最长回文子串" />
         <module name="面试题03-数组中重复的数字" />
         <module name="面试题-06-从尾到头打印链表" />
         <module name="十大排序" />

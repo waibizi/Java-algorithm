@@ -36,6 +36,7 @@
         <module>面试题-55-I-二叉树的深度</module>
         <module>面试题-27-二叉树的镜像</module>
         <module>面试题-001-数组去重</module>
+        <module>5-最长回文子串</module>
     </modules>
 
     <build>
