@@ -173,6 +173,9 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         queue.offer(root);
         while (!queue.isEmpty()){
             Node<E> node = queue.poll();
+            operation.execute(node.element);
+            if (node.left != null) queue.offer(node.left);
+            if (node.right != null) queue.offer(node.right);
         }
     }
 
