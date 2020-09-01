@@ -37,6 +37,9 @@
         <module>面试题-27-二叉树的镜像</module>
         <module>面试题-001-数组去重</module>
         <module>5-最长回文子串</module>
+        <module>783-二叉搜索树节点最小距离</module>
+        <module>530-二叉搜索树的最小绝对差</module>
+        <module>98-验证二叉搜索树</module>
     </modules>
 
     <build>

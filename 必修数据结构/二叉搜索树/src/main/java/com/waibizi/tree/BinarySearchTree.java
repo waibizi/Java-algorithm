@@ -116,7 +116,6 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
         size++;
     }
-
     /**
      * 前序遍历
      * @param operation
@@ -125,29 +124,23 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         if (operation != null)
             preorderTraversal(root,operation);
     }
-
     public void preorderTraversal(Node<E> node,Operation<E> operation){
         if (node == null) return;
         operation.execute(node.element);
         preorderTraversal(node.left,operation);
         preorderTraversal(node.right,operation);
     }
-
-
-
     /* 中序遍历 */
     public void inorderTraversal(Operation<E> operation) {
         if (operation != null)
             inorderTraversal(root,operation);
     }
-
     public void inorderTraversal(Node<E> node,Operation<E> operation) {
         if (node == null) return;
         inorderTraversal(node.left,operation);
         operation.execute(node.element);
         inorderTraversal(node.right,operation);
     }
-
     /**
      * 后续遍历
      * @param operation
@@ -162,7 +155,6 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         postoderTraversal(node.right,operation);
         operation.execute(node.element);
     }
-
     /**
      * 层序遍历
      * @param operation
@@ -178,12 +170,11 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
             if (node.right != null) queue.offer(node.right);
         }
     }
-
     /**
      * 判断是不是完全二叉树，如果是返回true，如果不是返回false
      */
     public boolean isComplete() {
-        if (root != null) return false;
+        if (root == null) return false;
         Queue<Node<E>> queue = new LinkedList<>();
         queue.offer(root);
         /* 剩下都是叶子的标志 */
@@ -191,10 +182,9 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         while (!queue.isEmpty()){
             Node<E> node = queue.poll();
             /* 如果剩下的要求都是叶子，但是当前的节点并不是叶子节点，所以直接返回false就可以了 */
-            if (isLeaf && !node.isLeaf()){
+            if (isLeaf && !node.isLeaf())
                 return false;
-            }
-            if (node.left!=null)
+            if (node.left != null)
                 queue.offer(node.left);
             else if (node.right != null)
                 /* 能走到这一步，说明node.left == null 了，但是node.right != null ,已经说明不是完全二叉了 */
@@ -208,7 +198,99 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
         return true;
     }
+    /**
+     * 根据传入的节点返回传入节点的前驱节点
+     * @param node
+     * @return
+     */
+    public Node<E> precursor(Node<E> node){
+        if (node == null) return null;
+        Node<E> result = node.left;
+        if (result != null){
+            while (result.right != null){
+                result = result.right;
+            }
+            return result;
+        }
+        /* 如果节点没有左边的话，只能往上找 */
+        while (result.parent != null && result == result.parent.right){
+            result = result.parent;
+        }
+        return result;
+    }
+    /**
+     * 查找传入的节点的后继节点
+     */
+    public E successor(E element){
+        return successor(node(element)) != null? successor(node(element)).element:null;
+    }
+    public Node<E> successor(Node<E> node){
+        if (node == null) return null;
+        Node<E> result = node.right;
+        if (result != null){
+            while (result.left != null){
+                result = result.left;
+            }
+            return result;
+        }
+        /* 如果节点没有左边的话，只能往上找 */
+        while (result.parent != null && result == result.parent.left){
+            result = result.parent;
+        }
+        return result;
+    }
+    /**
+     * 移除二叉搜索树的值
+     * @param element
+     */
+    public void remove(E element) {
+        remove(node(element));
+    }
+    private void remove(Node<E> node) {
+        if (node == null) return;
+        size--;
+        /* 如果度为2 */
+        while (node.hasTwoChildren()){
+            Node<E> tmp = successor(node);
+            node.element = tmp.element;
+            node = tmp;
+        }
+        Node<E> replaceNode = node.left != null ? node.left : node.right;
+        /**
+         * 如果度为1，我们就判断这个度是在左还是在右，然后将左右的节点往上替换即可；
+         * 如果度为0，那么这个节点有可能是根节点，也有可能是叶子
+         */
+        if (replaceNode != null){
+            replaceNode.parent = node.parent;
+            /* 判断node是在左还是在右 */
+            if (node == node.parent.left){
+                node.parent.left = replaceNode;
+            }else{
+                node.parent.right = replaceNode;
+            }
+        }else{
+            /* 能走到这一步的代码证明度为0了 */
+            if (node.parent == null){
+                root = null;
+            }else{
+                if (node == node.parent.left){
+                    node.parent.left = null;
+                }else {
+                    node.parent.right = null;
+                }
 
+            }
+        }
+    }
+
+    /**
+     * 判断元素是否在二叉搜索树当中
+     * @param element
+     * @return
+     */
+    public boolean contains(E element){
+        return node(element) != null;
+    }
     /**
      * 操作接口
      * @param <E>
@@ -216,7 +298,6 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
     public static interface Operation<E>{
         boolean execute(E element);
     }
-
     /**
      * 根据元素的值，获取节点（因为二叉搜索树不能存在两个相同的节点）z
      * @param element
@@ -231,8 +312,6 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
         return null;
     }
-
-
     /**
      * 如果e1等于e2返回0，如果e1大于e2返回值大于0，如果e1小于e2返回值小于0
      * @param e1

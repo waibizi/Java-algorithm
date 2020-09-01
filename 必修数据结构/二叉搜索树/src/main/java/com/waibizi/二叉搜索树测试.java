@@ -13,10 +13,23 @@ import com.waibizi.tree.BinarySearchTree;
 public class 二叉搜索树测试 {
     public static void main(String[] args) {
         BinarySearchTree<Integer> tree = new BinarySearchTree<>();
-        for (int i =0; i < 10; i++){
-            tree.add(i);
-        }
+//        for (int i =0; i < 10; i++){
+//            tree.add(i);
+//        }
+//        System.out.println(tree.isComplete());
+        tree.add(5);
+        tree.add(3);
+        tree.add(8);
+        tree.add(1);
+        tree.add(4);
+        tree.add(6);
+        tree.add(9);
 
+        BinaryTrees.println(tree);
+        System.out.println(tree.isComplete());
+        tree.remove(5);
+        BinaryTrees.println(tree);
+        tree.remove(8);
         BinaryTrees.println(tree);
     }
 }
