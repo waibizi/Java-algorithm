@@ -10,6 +10,5 @@ public class Test {
     public static void main(String[] args) {
         long i = 3;
         int j = 2;
-
     }
 }

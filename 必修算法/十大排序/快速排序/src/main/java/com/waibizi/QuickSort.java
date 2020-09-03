@@ -7,4 +7,5 @@ package com.waibizi;
  * @Version 1.0
  */
 public class QuickSort {
+
 }

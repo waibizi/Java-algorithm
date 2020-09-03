@@ -40,6 +40,12 @@
         <module>783-二叉搜索树节点最小距离</module>
         <module>530-二叉搜索树的最小绝对差</module>
         <module>98-验证二叉搜索树</module>
+        <module>必修数据结构/AVL树</module>
+        <module>面试题-33-二叉搜索树的后序遍历序列</module>
+        <module>面试题-52-两个链表的第一个公共节点</module>
+        <module>面试题-68-II二叉树的最近公共祖先</module>
+        <module>面试题-40-最小的k个数</module>
+        <module>49-字母异位词分组</module>
     </modules>
 
     <build>
