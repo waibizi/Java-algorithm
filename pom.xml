@@ -46,6 +46,8 @@
         <module>面试题-68-II二叉树的最近公共祖先</module>
         <module>面试题-40-最小的k个数</module>
         <module>49-字母异位词分组</module>
+        <module>面试题-59-I.滑动窗口的最大值</module>
+        <module>必修数据结构/图</module>
     </modules>
 
     <build>

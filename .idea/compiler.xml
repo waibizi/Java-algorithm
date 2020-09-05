@@ -8,14 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="98-验证二叉搜索树" />
         <module name="面试题-40-最小的k个数" />
-        <module name="面试题-001-数组去重" />
+        <module name="LRU缓存" />
+        <module name="图" />
         <module name="146-LRU缓存机制" />
         <module name="必修算法" />
         <module name="动态数组" />
         <module name="5-最长回文子串" />
+        <module name="面试题-001-数组去重" />
         <module name="面试题03-数组中重复的数字" />
         <module name="面试题-06-从尾到头打印链表" />
-        <module name="十大排序" />
+        <module name="AVL树" />
         <module name="面试题09-用两个栈实现队列" />
         <module name="LRU" />
         <module name="面试题25-合并两个排序的链表" />
@@ -24,7 +26,7 @@
         <module name="121-买卖股票的最佳时机" />
         <module name="530-二叉搜索树的最小绝对差" />
         <module name="面试题32-I-从上到下打印二叉树" />
-        <module name="AVL树" />
+        <module name="面试题-59-I.滑动窗口的最大值" />
         <module name="20-有效的括号" />
         <module name="面试题18-删除链表的节点" />
         <module name="面试题-55-I-二叉树的深度" />
@@ -35,6 +37,7 @@
         <module name="49-字母异位词分组" />
         <module name="面试题32-III-从上到下打印二叉树 III" />
         <module name="面试题-27-二叉树的镜像" />
+        <module name="十大排序" />
         <module name="必修数据结构" />
         <module name="面试题-68-II二叉树的最近公共祖先" />
         <module name="堆" />
@@ -49,5 +52,49 @@
         <module name="141-环形链表" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="121-买卖股票的最佳时机" target="1.8" />
+      <module name="141-环形链表" target="1.8" />
+      <module name="20-有效的括号" target="1.8" />
+      <module name="49-字母异位词分组" target="1.8" />
+      <module name="5-最长回文子串" target="1.8" />
+      <module name="530-二叉搜索树的最小绝对差" target="1.8" />
+      <module name="783-二叉搜索树节点最小距离" target="1.8" />
+      <module name="98-验证二叉搜索树" target="1.8" />
+      <module name="algorithm" target="1.8" />
+      <module name="AVL树" target="1.8" />
+      <module name="LRU缓存" target="1.8" />
+      <module name="二叉搜索树" target="1.8" />
+      <module name="冒泡排序" target="1.8" />
+      <module name="动态数组" target="1.8" />
+      <module name="十大排序" target="1.8" />
+      <module name="图" target="1.8" />
+      <module name="堆" target="1.8" />
+      <module name="必修数据结构" target="1.8" />
+      <module name="必修算法" target="1.8" />
+      <module name="栈" target="1.8" />
+      <module name="选择排序" target="1.8" />
+      <module name="链表" target="1.8" />
+      <module name="队列" target="1.8" />
+      <module name="面试题-001-数组去重" target="1.8" />
+      <module name="面试题-03-数组中重复的数字" target="1.8" />
+      <module name="面试题-06-从尾到头打印链表" target="1.8" />
+      <module name="面试题-27-二叉树的镜像" target="1.8" />
+      <module name="面试题-31-栈的压入、弹出序列" target="1.8" />
+      <module name="面试题-33-二叉搜索树的后序遍历序列" target="1.8" />
+      <module name="面试题-40-最小的k个数" target="1.8" />
+      <module name="面试题-52-两个链表的第一个公共节点" target="1.8" />
+      <module name="面试题-55-I-二叉树的深度" target="1.8" />
+      <module name="面试题-59-I.滑动窗口的最大值" target="1.8" />
+      <module name="面试题-68-II二叉树的最近公共祖先" target="1.8" />
+      <module name="面试题09-用两个栈实现队列" target="1.8" />
+      <module name="面试题14-I-剪绳子" target="1.8" />
+      <module name="面试题18-删除链表的节点" target="1.8" />
+      <module name="面试题24-反转链表" target="1.8" />
+      <module name="面试题25-合并两个排序的链表" target="1.8" />
+      <module name="面试题32-I-从上到下打印二叉树" target="1.8" />
+      <module name="面试题32-III-从上到下打印二叉树 III" target="1.8" />
+      <module name="面试题63-股票的最大利润" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

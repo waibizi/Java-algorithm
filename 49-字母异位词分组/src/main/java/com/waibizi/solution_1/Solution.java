@@ -1,9 +1,6 @@
 package com.waibizi.solution_1;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @Author 歪鼻子
@@ -12,21 +9,23 @@ import java.util.Set;
  * @Version 1.0
  */
 public class Solution {
-    public List<List<String>> Solution(String[] args){
+    public List<List<String>> groupAnagrams(String[] strs){
         List<List<String>> result = new ArrayList<>();
-        boolean[] flag = new boolean[args.length];
-        for(int i = 0; i < args.length; i++){
+        boolean[] flag = new boolean[strs.length];
+        for(int i = 0; i < strs.length; i++){
             List<String> cache = null;
             if(!flag[i]){
                 cache = new ArrayList<>();
-                for(int j = 0; j < args.length; j++){
-                    if(judge(args[i],args[j])){
+                cache.add(strs[i]);
+                for(int j = i+1; j < strs.length; j++){
+                    if(judge(strs[i],strs[j])){
                         flag[j] = true;
-                        cache.add(args[i]);
+                        cache.add(strs[j]);
                     }
                 }
             }
             if(cache!=null){
+                Collections.reverse(cache);
                 result.add(cache);
             }
         }
@@ -49,7 +48,7 @@ public class Solution {
             if(map.containsKey(argsB.charAt(i))){
                 map.put(argsB.charAt(i),map.get(argsB.charAt(i))-1);
             }else{
-                map.put(argsB.charAt(i),1);
+                return false;
             }
         }
         Set<Character> set = map.keySet();
@@ -59,6 +58,5 @@ public class Solution {
             }
         }
         return true;
-
     }
 }

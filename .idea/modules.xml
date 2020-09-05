@@ -2,8 +2,48 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/必修算法/十大排序/希尔排序/希尔排序.iml" filepath="$PROJECT_DIR$/必修算法/十大排序/希尔排序/希尔排序.iml" />
-      <module fileurl="file://$PROJECT_DIR$/必修算法/十大排序/快速排序/快速排序.iml" filepath="$PROJECT_DIR$/必修算法/十大排序/快速排序/快速排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/121-买卖股票的最佳时机/121-买卖股票的最佳时机.iml" filepath="$PROJECT_DIR$/121-买卖股票的最佳时机/121-买卖股票的最佳时机.iml" />
+      <module fileurl="file://$PROJECT_DIR$/141-环形链表/141-环形链表.iml" filepath="$PROJECT_DIR$/141-环形链表/141-环形链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20-有效的括号/20-有效的括号.iml" filepath="$PROJECT_DIR$/20-有效的括号/20-有效的括号.iml" />
+      <module fileurl="file://$PROJECT_DIR$/49-字母异位词分组/49-字母异位词分组.iml" filepath="$PROJECT_DIR$/49-字母异位词分组/49-字母异位词分组.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-最长回文子串/5-最长回文子串.iml" filepath="$PROJECT_DIR$/5-最长回文子串/5-最长回文子串.iml" />
+      <module fileurl="file://$PROJECT_DIR$/530-二叉搜索树的最小绝对差/530-二叉搜索树的最小绝对差.iml" filepath="$PROJECT_DIR$/530-二叉搜索树的最小绝对差/530-二叉搜索树的最小绝对差.iml" />
+      <module fileurl="file://$PROJECT_DIR$/783-二叉搜索树节点最小距离/783-二叉搜索树节点最小距离.iml" filepath="$PROJECT_DIR$/783-二叉搜索树节点最小距离/783-二叉搜索树节点最小距离.iml" />
+      <module fileurl="file://$PROJECT_DIR$/98-验证二叉搜索树/98-验证二叉搜索树.iml" filepath="$PROJECT_DIR$/98-验证二叉搜索树/98-验证二叉搜索树.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/AVL树/AVL树.iml" filepath="$PROJECT_DIR$/必修数据结构/AVL树/AVL树.iml" />
+      <module fileurl="file://$PROJECT_DIR$/146-LRU缓存机制/LRU缓存.iml" filepath="$PROJECT_DIR$/146-LRU缓存机制/LRU缓存.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/algorithm.iml" filepath="$PROJECT_DIR$/.idea/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/二叉搜索树/二叉搜索树.iml" filepath="$PROJECT_DIR$/必修数据结构/二叉搜索树/二叉搜索树.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修算法/十大排序/冒泡排序/冒泡排序.iml" filepath="$PROJECT_DIR$/必修算法/十大排序/冒泡排序/冒泡排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/动态数组/动态数组.iml" filepath="$PROJECT_DIR$/必修数据结构/动态数组/动态数组.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修算法/十大排序/十大排序.iml" filepath="$PROJECT_DIR$/必修算法/十大排序/十大排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/图/图.iml" filepath="$PROJECT_DIR$/必修数据结构/图/图.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/堆/堆.iml" filepath="$PROJECT_DIR$/必修数据结构/堆/堆.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/必修数据结构.iml" filepath="$PROJECT_DIR$/必修数据结构/必修数据结构.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修算法/必修算法.iml" filepath="$PROJECT_DIR$/必修算法/必修算法.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/栈/栈.iml" filepath="$PROJECT_DIR$/必修数据结构/栈/栈.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修算法/十大排序/选择排序/选择排序.iml" filepath="$PROJECT_DIR$/必修算法/十大排序/选择排序/选择排序.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/链表/链表.iml" filepath="$PROJECT_DIR$/必修数据结构/链表/链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/必修数据结构/队列/队列.iml" filepath="$PROJECT_DIR$/必修数据结构/队列/队列.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-001-数组去重/面试题-001-数组去重.iml" filepath="$PROJECT_DIR$/面试题-001-数组去重/面试题-001-数组去重.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题03-数组中重复的数字/面试题-03-数组中重复的数字.iml" filepath="$PROJECT_DIR$/面试题03-数组中重复的数字/面试题-03-数组中重复的数字.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-06-从尾到头打印链表/面试题-06-从尾到头打印链表.iml" filepath="$PROJECT_DIR$/面试题-06-从尾到头打印链表/面试题-06-从尾到头打印链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-27-二叉树的镜像/面试题-27-二叉树的镜像.iml" filepath="$PROJECT_DIR$/面试题-27-二叉树的镜像/面试题-27-二叉树的镜像.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-31-栈的压入、弹出序列/面试题-31-栈的压入、弹出序列.iml" filepath="$PROJECT_DIR$/面试题-31-栈的压入、弹出序列/面试题-31-栈的压入、弹出序列.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-33-二叉搜索树的后序遍历序列/面试题-33-二叉搜索树的后序遍历序列.iml" filepath="$PROJECT_DIR$/面试题-33-二叉搜索树的后序遍历序列/面试题-33-二叉搜索树的后序遍历序列.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-40-最小的k个数/面试题-40-最小的k个数.iml" filepath="$PROJECT_DIR$/面试题-40-最小的k个数/面试题-40-最小的k个数.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-52-两个链表的第一个公共节点/面试题-52-两个链表的第一个公共节点.iml" filepath="$PROJECT_DIR$/面试题-52-两个链表的第一个公共节点/面试题-52-两个链表的第一个公共节点.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-55-I-二叉树的深度/面试题-55-I-二叉树的深度.iml" filepath="$PROJECT_DIR$/面试题-55-I-二叉树的深度/面试题-55-I-二叉树的深度.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-59-I.滑动窗口的最大值/面试题-59-I.滑动窗口的最大值.iml" filepath="$PROJECT_DIR$/面试题-59-I.滑动窗口的最大值/面试题-59-I.滑动窗口的最大值.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题-68-II二叉树的最近公共祖先/面试题-68-II二叉树的最近公共祖先.iml" filepath="$PROJECT_DIR$/面试题-68-II二叉树的最近公共祖先/面试题-68-II二叉树的最近公共祖先.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题09-用两个栈实现队列/面试题09-用两个栈实现队列.iml" filepath="$PROJECT_DIR$/面试题09-用两个栈实现队列/面试题09-用两个栈实现队列.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题14-I-剪绳子/面试题14-I-剪绳子.iml" filepath="$PROJECT_DIR$/面试题14-I-剪绳子/面试题14-I-剪绳子.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题18-删除链表的节点/面试题18-删除链表的节点.iml" filepath="$PROJECT_DIR$/面试题18-删除链表的节点/面试题18-删除链表的节点.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题24-反转链表/面试题24-反转链表.iml" filepath="$PROJECT_DIR$/面试题24-反转链表/面试题24-反转链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题25-合并两个排序的链表/面试题25-合并两个排序的链表.iml" filepath="$PROJECT_DIR$/面试题25-合并两个排序的链表/面试题25-合并两个排序的链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题32-I-从上到下打印二叉树/面试题32-I-从上到下打印二叉树.iml" filepath="$PROJECT_DIR$/面试题32-I-从上到下打印二叉树/面试题32-I-从上到下打印二叉树.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题32-III-从上到下打印二叉树 III/面试题32-III-从上到下打印二叉树 III.iml" filepath="$PROJECT_DIR$/面试题32-III-从上到下打印二叉树 III/面试题32-III-从上到下打印二叉树 III.iml" />
+      <module fileurl="file://$PROJECT_DIR$/面试题63-股票的最大利润/面试题63-股票的最大利润.iml" filepath="$PROJECT_DIR$/面试题63-股票的最大利润/面试题63-股票的最大利润.iml" />
     </modules>
   </component>
 </project>
