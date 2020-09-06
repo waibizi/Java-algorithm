@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="98-验证二叉搜索树" />
         <module name="面试题-40-最小的k个数" />
+        <module name="面试题-32-II.从上到下打印二叉树 II" />
         <module name="LRU缓存" />
         <module name="图" />
         <module name="146-LRU缓存机制" />
@@ -81,6 +82,7 @@
       <module name="面试题-06-从尾到头打印链表" target="1.8" />
       <module name="面试题-27-二叉树的镜像" target="1.8" />
       <module name="面试题-31-栈的压入、弹出序列" target="1.8" />
+      <module name="面试题-32-II.从上到下打印二叉树 II" target="1.8" />
       <module name="面试题-33-二叉搜索树的后序遍历序列" target="1.8" />
       <module name="面试题-40-最小的k个数" target="1.8" />
       <module name="面试题-52-两个链表的第一个公共节点" target="1.8" />
